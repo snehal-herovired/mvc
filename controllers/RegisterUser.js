@@ -1,7 +1,7 @@
 const UserModel =require("../models/USerSchema")
 // importing db model to store ther credentials of user;
 
-function RegisterUser(req, res) {
+function RegisterUser(req, res,next) {
     let username = req.body.username;
     let email = req.body.email;
     let password = req.body.password;
